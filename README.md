@@ -46,5 +46,5 @@ The realm is imported automatically from `keycloak/civicpulse-realm.json` on the
 - `GET /api/dashboard/summary`
 - `GET /api/audit`
 
-## Resume-ready project description
+##project description
 **CivicPulse Nexus – Smart Governance Platform** — Built a role-secured Spring Boot and React platform that connects citizen grievances, certificate workflows and welfare/budget operations through PostgreSQL. Implemented Keycloak JWT/RBAC, SLA-aware workflows, append-only audit logging, Kafka governance events and Redis-backed dashboard caching, with a responsive React JSX operations console and Docker Compose development environment.
