@@ -1,0 +1,108 @@
+{
+  "realm": "civicpulse",
+  "enabled": true,
+  "displayName": "CivicPulse Nexus",
+  "registrationAllowed": false,
+  "roles": {
+    "realm": [
+      {
+        "name": "ADMIN"
+      },
+      {
+        "name": "COMMISSIONER"
+      },
+      {
+        "name": "OFFICER"
+      },
+      {
+        "name": "CITIZEN"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "civicpulse-web",
+      "name": "CivicPulse Web",
+      "enabled": true,
+      "publicClient": true,
+      "protocol": "openid-connect",
+      "redirectUris": [
+        "http://localhost:5173/*"
+      ],
+      "webOrigins": [
+        "http://localhost:5173"
+      ],
+      "standardFlowEnabled": true
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "enabled": true,
+      "email": "admin@civicpulse.local",
+      "firstName": "System",
+      "lastName": "Admin",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "username": "commissioner",
+      "enabled": true,
+      "email": "commissioner@civicpulse.local",
+      "firstName": "City",
+      "lastName": "Commissioner",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "COMMISSIONER"
+      ]
+    },
+    {
+      "username": "officer",
+      "enabled": true,
+      "email": "officer@civicpulse.local",
+      "firstName": "Service",
+      "lastName": "Officer",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "OFFICER"
+      ]
+    },
+    {
+      "username": "citizen",
+      "enabled": true,
+      "email": "citizen@civicpulse.local",
+      "firstName": "Demo",
+      "lastName": "Citizen",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "CITIZEN"
+      ]
+    }
+  ]
+}
